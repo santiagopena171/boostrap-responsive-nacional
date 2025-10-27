@@ -1,0 +1,9 @@
+/* Estilos base del sitio */
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: .5rem;
+}
+

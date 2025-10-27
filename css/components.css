@@ -1,0 +1,34 @@
+/* Componentes y pequeñas utilidades */
+
+.menu-lines {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  position: relative;
+}
+
+.menu-lines span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+}
+
+.menu-lines span:nth-child(1) { top: 0; }
+.menu-lines span:nth-child(2) { top: 6px; }
+.menu-lines span:nth-child(3) { bottom: 0; }
+
+/* Oculta el caret del botón dropdown del header de la tarjeta */
+.card-header .dropdown-toggle::after {
+  display: none;
+}
+
+/* Asegura que las imágenes del carrusel se muestren */
+.carousel-inner { background: #eef1f4; }
+.carousel-item img {
+  width: 100%;
+  height: clamp(220px, 40vw, 420px);
+  object-fit: cover;
+  display: block;
+}
